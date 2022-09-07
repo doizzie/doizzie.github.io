@@ -19,18 +19,22 @@ html, body{
 
 /* Works on Firefox */
 * {
-  scrollbar-width: thin;
+  /*scrollbar-width: thin;
   scrollbar-color: black white;
-  scrollbar-border-radius: 20%;
+  scrollbar-border-radius: 20%;*/
+  -ms-overflow-style:none;
+  scrollbar-width:none;
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 10px;
+  /*width: 10px;*/
+  display:none;
 }
 
 *::-webkit-scrollbar-track {
-  background: white;
+  /*background: white;*/
+  display:none;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -338,25 +342,17 @@ nav a .active{
 
 }
 
-.skills {
+#skills, #langs {
   text-align: right;
   padding-top: 2px; /* Add top padding */
   padding-bottom: 2px; /* Add bottom padding */
-  color: white; 
+  color: black;
   /*left:2px;*/
   margin-top:0;
-  /*padding-left:3px;*/
-  background-color:black;
   border-radius:5px;
   font-family: 'Roboto', sans-serif;
-  font-size:12px;
+  font-size:15px;
 }
-
-.html {width: 95%;} /* Green */
-.css {width: 80%; } /* Blue */
-.js {width: 50%; } /* Red */
-.cplus {width:80%;}
-.java {width: 60%; }
 
 .closed{
 	display:none;
@@ -1268,6 +1264,7 @@ a:hover {
  	}
  	.maininfo, #something, #something2, #something3, #something4, #something5{
  		background:none;
+ 		height:100%;
  	}
  	.gobackbuttn{
  		top:0%;
