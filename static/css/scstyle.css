@@ -328,8 +328,9 @@ ul {
 ================================================================================ */
 #skills {
   margin: 2% auto;
-  width: 60%;
+  width: 70%;
   max-width: 960px;
+  padding-right: 1%;
 }
 #skills li {
   position: relative;
