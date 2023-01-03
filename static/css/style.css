@@ -13,28 +13,31 @@ body{
 }
 
 html, body{
-	overflow:scroll;
+	/*overflow:scroll;*/
 }
 
+body#cvBodyPage {
+	overflow-y:hidden;
+}
 
 /* Works on Firefox */
 * {
-  /*scrollbar-width: thin;
+  scrollbar-width: thin;
   scrollbar-color: black white;
-  scrollbar-border-radius: 20%;*/
-  -ms-overflow-style:none;
-  scrollbar-width:none;
+  scrollbar-border-radius: 20%;
+  /*-ms-overflow-style:none;*/
+  /*scrollbar-width:none;*/
 }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  /*width: 10px;*/
-  display:none;
+  width: 10px;
+  /*display:none;*/
 }
 
 *::-webkit-scrollbar-track {
-  /*background: white;*/
-  display:none;
+  background: white;
+  /*display:none;*/
 }
 
 *::-webkit-scrollbar-thumb {
@@ -323,7 +326,7 @@ nav a .active{
 
 /* Container for skill bars */
 .skillContainer {
-  width: 80%; /* Full width */
+  width: 100%; /* Full width */
   background-color: #ddd;
   text-align:center;
   margin:0 auto;
@@ -342,6 +345,7 @@ nav a .active{
 
 }
 
+
 #skills, #langs {
   text-align: right;
   padding-top: 2px; /* Add top padding */
@@ -352,6 +356,16 @@ nav a .active{
   border-radius:5px;
   font-family: 'Roboto', sans-serif;
   font-size:15px;
+}
+#skills{
+	width: 100%;
+	padding-top:0;
+	margin-left:0;
+	font-size: 14px;
+	height: 50vh;
+	overflow-y: scroll;
+	/*overflow*/
+	overflow-x: hidden;
 }
 
 .closed{
